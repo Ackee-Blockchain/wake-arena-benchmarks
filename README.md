@@ -10,7 +10,7 @@ Full writeup: [Wake Arena: Multi-Agent AI Audit with Graph-Driven Reasoning](htt
 
 **Metric:** High-severity vulnerabilities detected (confirmed by competition judging).
 
-| Protocol | High-Severity Issues | Wake Arena | Zellic Scanner V12 | EvmBench | Plain GPT-5 | Plain Opus 4.5 |
+| Protocol | High-Severity Issues | Wake Arena | Zellic Scanner V12 | EVMBench | Plain GPT-5 | Plain Opus 4.5 |
 |---|---:|---:|---:|---:|---:|---:|
 | [Basin](https://code4rena.com/reports/2024-07-basin) | 2 | **2** | 2 | 2 | 2 | 2 |
 | [Blackhole](https://code4rena.com/audits/2025-05-blackhole) | 2 | **2** | 2 | 0 | 1 | 0 |
