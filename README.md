@@ -10,23 +10,23 @@ Full writeup: [Wake Arena: Multi-Agent AI Audit with Graph-Driven Reasoning](htt
 
 **Metric:** High-severity vulnerabilities detected (confirmed by competition judging).
 
-| Protocol | Competition | High-Severity Issues | Wake Arena | Zellic Scanner V12 | Plain GPT-5 | Plain Opus 4.5 |
-|---|---|---:|---:|---:|---:|---:|
-| [Basin](https://code4rena.com/reports/2024-07-basin) | C4, Jul 2024 | 2 | **2** | 2 | 2 | 2 |
-| [Blackhole](https://code4rena.com/audits/2025-05-blackhole) | C4, May 2025 | 2 | **2** | 2 | 1 | 0 |
-| [Burve](https://audits.sherlock.xyz/contests/858) | Sherlock, Apr 2025 | 9 | **2** | 2 | 2 | 0 |
-| [Crestal](https://audits.sherlock.xyz/contests/755) | Sherlock, Mar 2025 | 1 | **1** | 1 | 1 | 1 |
-| [DODO](https://audits.sherlock.xyz/contests/991) | Sherlock, Jun 2025 | 5 | **2** | 2 | 1 | 4 |
-| [Lambo.win](https://code4rena.com/audits/2024-12-lambowin) | C4, Dec 2024 | 4 | **2** | 2 | 2 | 1 |
-| [Lend](https://audits.sherlock.xyz/contests/908) | Sherlock, Jun 2025 | 28 | **13** | 10 | 4 | 6 |
-| [Mellow](https://audits.sherlock.xyz/contests/964) | Sherlock, Jul 2025 | 6 | **2** | 2 | 1 | 0 |
-| [Munchables](https://code4rena.com/reports/2024-07-munchables) | C4, Jul 2024 | 5 | **4** | 4 | 2 | 3 |
-| [Notional Exponent](https://audits.sherlock.xyz/contests/1001) | Sherlock, Jul 2025 | 11 | **2** | 2 | 0 | 0 |
-| [Phi](https://code4rena.com/reports/2024-08-phi) | C4, Oct 2024 | 7 | **4** | 6 | 3 | 3 |
-| [Superfluid](https://audits.sherlock.xyz/contests/968) | Sherlock, Jun 2025 | 2 | **1** | 1 | 1 | 0 |
-| [TraitForge](https://code4rena.com/audits/2024-07-traitforge) | C4, Jul 2024 | 6 | **2** | 1 | 2 | 0 |
-| [Virtuals](https://code4rena.com/audits/2025-04-virtuals-protocol) | C4, Apr 2025 | 6 | **4** | 4 | 2 | 1 |
-| **Total** | | **94** | **43 (45.7%)** | **41 (43.6%)** | **24 (25.5%)** | **21 (22.3%)** |
+| Protocol | High-Severity Issues | Wake Arena | Zellic Scanner V12 | EvmBench | Plain GPT-5 | Plain Opus 4.5 |
+|---|---:|---:|---:|---:|---:|---:|
+| [Basin](https://code4rena.com/reports/2024-07-basin) | 2 | **2** | 2 | 2 | 2 | 2 |
+| [Blackhole](https://code4rena.com/audits/2025-05-blackhole) | 2 | **2** | 2 | 0 | 1 | 0 |
+| [Burve](https://audits.sherlock.xyz/contests/858) | 9 | **2** | 2 | 2 | 2 | 0 |
+| [Crestal](https://audits.sherlock.xyz/contests/755) | 1 | **1** | 1 | 1 | 1 | 1 |
+| [DODO](https://audits.sherlock.xyz/contests/991) | 5 | **2** | 2 | 2 | 1 | 4 |
+| [Lambo.win](https://code4rena.com/audits/2024-12-lambowin) | 4 | **2** | 2 | 1 | 2 | 1 |
+| [Lend](https://audits.sherlock.xyz/contests/908) | 28 | **13** | 10 | 4 | 4 | 6 |
+| [Mellow](https://audits.sherlock.xyz/contests/964) | 6 | **2** | 2 | 1 | 1 | 0 |
+| [Munchables](https://code4rena.com/reports/2024-07-munchables) | 5 | **4** | 4 | 2 | 2 | 3 |
+| [Notional Exponent](https://audits.sherlock.xyz/contests/1001) | 11 | **2** | 2 | 1 | 0 | 0 |
+| [Phi](https://code4rena.com/reports/2024-08-phi) | 7 | **4** | 6 | 2 | 3 | 3 |
+| [Superfluid](https://audits.sherlock.xyz/contests/968) | 2 | **1** | 1 | 1 | 1 | 0 |
+| [TraitForge](https://code4rena.com/audits/2024-07-traitforge) | 6 | **2** | 1 | 1 | 2 | 0 |
+| [Virtuals](https://code4rena.com/audits/2025-04-virtuals-protocol) | 6 | **4** | 4 | 1 | 2 | 1 |
+| **Total** | **94** | **43 (45.7%)** | **41 (43.6%)** | **21 (22.3%)** | **24 (25.5%)** | **21 (22.3%)** |
 
 ### Test conditions
 
@@ -365,6 +365,15 @@ Summary of the types of vulnerabilities Wake Arena detects well, based on benchm
 | **Protocol-specific logic** | Munchables, TraitForge, Burve | Dirty flag never cleared, generation counter limits, fee checkpoint mismanagement |
 | **Reentrancy / callbacks** | Phi | Sell-lock bypass via refund reentrancy |
 | **Parameter validation** | Basin, Blackhole, Lambo.win | Inverted zero-address check, `msg.value` / ERC20 amount mismatch |
+
+---
+
+## Changelog
+
+| Date | Change |
+|---|---|
+| Dec 10, 2025 | Initial benchmarks published: Wake Arena, Zellic Scanner V12, Plain GPT-5, Plain Opus 4.5 |
+| Feb 22, 2026 | Added EvmBench results to the comparison table |
 
 ---
 
