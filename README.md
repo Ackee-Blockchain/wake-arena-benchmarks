@@ -20,19 +20,20 @@ Full writeup: [Wake Arena: Multi-Agent AI Audit with Graph-Driven Reasoning](htt
 | [Lambo.win](https://code4rena.com/audits/2024-12-lambowin) | 4 | **2** | 2 | 1 | 2 | 1 |
 | [Lend](https://audits.sherlock.xyz/contests/908) | 28 | **13** | 10 | 4 | 4 | 6 |
 | [Mellow](https://audits.sherlock.xyz/contests/964) | 6 | **2** | 2 | 1 | 1 | 0 |
-| [Munchables](https://code4rena.com/reports/2024-07-munchables) | 5 | **4** | 4 | 2 | 2 | 3 |
+| [Munchables](https://code4rena.com/reports/2024-07-munchables) | 5 | **4** | 4 | 3 | 2 | 3 |
 | [Notional Exponent](https://audits.sherlock.xyz/contests/1001) | 11 | **2** | 2 | 1 | 0 | 0 |
 | [Phi](https://code4rena.com/reports/2024-08-phi) | 7 | **4** | 6 | 2 | 3 | 3 |
 | [Superfluid](https://audits.sherlock.xyz/contests/968) | 2 | **1** | 1 | 1 | 1 | 0 |
 | [TraitForge](https://code4rena.com/audits/2024-07-traitforge) | 6 | **2** | 1 | 1 | 2 | 0 |
 | [Virtuals](https://code4rena.com/audits/2025-04-virtuals-protocol) | 6 | **4** | 4 | 1 | 2 | 1 |
-| **Total** | **94** | **43 (45.7%)** | **41 (43.6%)** | **21 (22.3%)** | **24 (25.5%)** | **21 (22.3%)** |
+| **Total** | **94** | **43 (45.7%)** | **41 (43.6%)** | **22 (22.3%)** | **24 (25.5%)** | **21 (22.3%)** |
 
 ### Test conditions
 
 - Plain GPT-5 was run via the Code CLI with prompt `"perform extensive deep Solidity smart contract security analysis"` from the repository root. No special guidance.
 - Plain Opus 4.5 was run via the Claude Code CLI with the same prompt and conditions.
 - Wake Arena scans ran with standard configuration. No per-protocol tuning.
+- EVMBench was run using Codex-GPT-5.2 on web and using Codex-GPT-5.2-xhigh locally (both to the same results)
 - Testing conducted November 2025.
 
 ## Production Audit Results
