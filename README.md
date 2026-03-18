@@ -8,25 +8,25 @@ Full writeup: [Wake Arena: Multi-Agent AI Audit with Graph-Driven Reasoning](htt
 
 **Dataset:** 14 protocols from [Code4rena](https://code4rena.com) and [Sherlock](https://audits.sherlock.xyz) audit competitions (same dataset used by [Zellic](https://zellic.io)). All codebases and competition findings are public.
 
-**Metric:** High-severity vulnerabilities detected (confirmed by competition judging).
+**Metric:** Critical/High-severity vulnerabilities detected (confirmed by competition judging).
 
-| Protocol | High-Severity Issues | Wake Arena | Zellic Scanner V12 | EVMBench | Plain GPT-5 | Plain Opus 4.5 |
-|---|---:|---:|---:|---:|---:|---:|
-| [Basin](https://code4rena.com/reports/2024-07-basin) | 2 | **2** | 2 | 2 | 2 | 2 |
-| [Blackhole](https://code4rena.com/audits/2025-05-blackhole) | 2 | **2** | 2 | 0 | 1 | 0 |
-| [Burve](https://audits.sherlock.xyz/contests/858) | 9 | **2** | 2 | 2 | 2 | 0 |
-| [Crestal](https://audits.sherlock.xyz/contests/755) | 1 | **1** | 1 | 1 | 1 | 1 |
-| [DODO](https://audits.sherlock.xyz/contests/991) | 5 | **2** | 2 | 2 | 1 | 4 |
-| [Lambo.win](https://code4rena.com/audits/2024-12-lambowin) | 4 | **2** | 2 | 1 | 2 | 1 |
-| [Lend](https://audits.sherlock.xyz/contests/908) | 28 | **13** | 10 | 4 | 4 | 6 |
-| [Mellow](https://audits.sherlock.xyz/contests/964) | 6 | **2** | 2 | 1 | 1 | 0 |
-| [Munchables](https://code4rena.com/reports/2024-07-munchables) | 5 | **4** | 4 | 3 | 2 | 3 |
-| [Notional Exponent](https://audits.sherlock.xyz/contests/1001) | 11 | **2** | 2 | 1 | 0 | 0 |
-| [Phi](https://code4rena.com/reports/2024-08-phi) | 7 | **4** | 6 | 2 | 3 | 3 |
-| [Superfluid](https://audits.sherlock.xyz/contests/968) | 2 | **1** | 1 | 1 | 1 | 0 |
-| [TraitForge](https://code4rena.com/audits/2024-07-traitforge) | 6 | **2** | 1 | 1 | 2 | 0 |
-| [Virtuals](https://code4rena.com/audits/2025-04-virtuals-protocol) | 6 | **4** | 4 | 1 | 2 | 1 |
-| **Total** | **94** | **43 (45.7%)** | **41 (43.6%)** | **22 (22.3%)** | **24 (25.5%)** | **21 (22.3%)** |
+| Protocol | Critical/High-Severity Issues | Wake Arena 3.1 | Wake Arena 3.0 | Zellic Scanner V12 | EVMBench | Plain GPT-5 | Plain Opus 4.5 |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| [Basin](https://code4rena.com/reports/2024-07-basin) | 2 | **2** | 2 | 2 | 2 | 2 | 2 |
+| [Blackhole](https://code4rena.com/audits/2025-05-blackhole) | 2 | **2** | 2 | 2 | 0 | 1 | 0 |
+| [Burve](https://audits.sherlock.xyz/contests/858) | 9 | **4** | 2 | 2 | 2 | 2 | 0 |
+| [Crestal](https://audits.sherlock.xyz/contests/755) | 1 | **1** | 1 | 1 | 1 | 1 | 1 |
+| [DODO](https://audits.sherlock.xyz/contests/991) | 5 | **4** | 2 | 2 | 2 | 1 | 4 |
+| [Lambo.win](https://code4rena.com/audits/2024-12-lambowin) | 4 | **2** | 2 | 2 | 1 | 2 | 1 |
+| [Lend](https://audits.sherlock.xyz/contests/908) | 28 | **20** | 13 | 10 | 4 | 4 | 6 |
+| [Mellow](https://audits.sherlock.xyz/contests/964) | 6 | **2** | 2 | 2 | 1 | 1 | 0 |
+| [Munchables](https://code4rena.com/reports/2024-07-munchables) | 5 | **5** | 4 | 4 | 3 | 2 | 3 |
+| [Notional Exponent](https://audits.sherlock.xyz/contests/1001) | 11 | **4** | 2 | 2 | 1 | 0 | 0 |
+| [Phi](https://code4rena.com/reports/2024-08-phi) | 7 | **6** | 4 | 6 | 2 | 3 | 3 |
+| [Superfluid](https://audits.sherlock.xyz/contests/968) | 2 | **1** | 1 | 1 | 1 | 1 | 0 |
+| [TraitForge](https://code4rena.com/audits/2024-07-traitforge) | 6 | **4** | 2 | 1 | 1 | 2 | 0 |
+| [Virtuals](https://code4rena.com/audits/2025-04-virtuals-protocol) | 6 | **6** | 4 | 4 | 1 | 2 | 1 |
+| **Total** | **94** | **63 (67.0%)** | **43 (45.7%)** | **41 (43.6%)** | **22 (23.4%)** | **24 (25.5%)** | **21 (22.3%)** |
 
 ### Test conditions
 
@@ -375,6 +375,7 @@ Summary of the types of vulnerabilities Wake Arena detects well, based on benchm
 |---|---|
 | Dec 10, 2025 | Initial benchmarks published: Wake Arena, Zellic Scanner V12, Plain GPT-5, Plain Opus 4.5 |
 | Feb 22, 2026 | Added EvmBench results to the comparison table |
+| Mar 18, 2026 | Added Wake Arena 3.1 results to the comparison table |
 
 ---
 
