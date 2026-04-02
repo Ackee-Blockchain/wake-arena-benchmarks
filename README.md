@@ -55,8 +55,8 @@ LUKSO served as a design partner during development. In a purely AI-driven audit
 
 | Metric | Value |
 |---|---|
-| True positive rate | > 50% |
-| False positive rate | < 50% |
+| True positive rate | > 70% |
+| False positive rate | < 30% |
 | Share of all reported findings | 33% |
 | Share of critical findings | 50% |
 
@@ -376,6 +376,7 @@ Summary of the types of vulnerabilities Wake Arena detects well, based on benchm
 | Dec 10, 2025 | Initial benchmarks published: Wake Arena, Zellic Scanner V12, Plain GPT-5, Plain Opus 4.5 |
 | Feb 22, 2026 | Added EvmBench results to the comparison table |
 | Mar 18, 2026 | Added Wake Arena 3.1 results to the comparison table |
+| Apr 2, 2026 | Updated aggregate metrics table |
 
 ---
 
